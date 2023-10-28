@@ -4,15 +4,17 @@ import React, { useState } from 'react';
 import ActivityManager from './ActivityManager';
 import Fact from './Facts';
 
+let totalChange = 0;
 function App() {
-
   const [animationDuration, setAnimationDuration] = useState(5);
   const [score, setScore] = useState(0);
 
   const incrementScore = (additionalPoints) => {
+    totalChange += additionalPoints;
     setScore(currentScore => currentScore + additionalPoints);
-    if (score % 10 == 0){
+    if (totalChange >= 10){
       setAnimationDuration(duration => duration * 0.8);
+      totalChange = 0;
     }
   };
 
