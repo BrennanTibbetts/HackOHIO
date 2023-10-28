@@ -1,3 +1,8 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-y: hidden;
+}
+
 .App {
   text-align: center;
 }
@@ -10,8 +15,8 @@
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-      filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(100%) contrast(119%);
-
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(60%) contrast(119%);
+    user-select: none;
   }
 }
 
@@ -21,13 +26,48 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.activity-manager {
+  margin-top: 1%;
+  display: flex;
+  width: 100%;
+  background-color: green;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.header-name {
+  user-select: none;
+  color: white;
+  margin: 0;
+}
+
+.header-name span {
+  color: green;
+}
+
+.dropdown {
+  width: 100%;
+  margin: 0px;
+}
+
+.dropdown button {
+  color: green;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out; /* Smooth transition for 0.5 seconds */
+}
+
+.dropdown-content.active {
+  max-height: 500px; /* Adjust this value based on your content's size */
 }
 
 @keyframes App-logo-spin {
