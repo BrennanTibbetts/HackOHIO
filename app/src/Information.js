@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Information.css'; // Assuming you have a CSS file for styling
+import ButtonMeanings from './ButtonMeanings';
 
 const Information = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -35,6 +36,7 @@ const Information = () => {
             and an interactive challenge. Dive in, earn points, and witness firsthand how your conscious choices contribute to a greener 
             future for our campus. Welcome to the sustainability revolution!
             </p>
+            <ButtonMeanings />
           </div>
         </div>
       )}
