@@ -31,6 +31,13 @@ body {
   }
 }
 
+.question {
+  width: 4%;
+  filter: invert(100%);
+  margin-top: 1%;
+  margin-left: 60%; 
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -39,6 +46,10 @@ body {
   align-items: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header div {
+  align-items: center;
 }
 
 .activity-manager {
@@ -74,11 +85,19 @@ body {
   white-space: nowrap; 
 }
 
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
 
 .header-name {
   user-select: none;
   color: white;
   margin: 0;
+  margin-left: 62%;
+  display: inline-block;
+  text-align: center;
 }
 
 .header-name span {
