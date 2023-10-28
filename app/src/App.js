@@ -12,7 +12,11 @@ function App() {
   const incrementScore = (additionalPoints) => {
     totalChange += additionalPoints;
     setScore(currentScore => currentScore + additionalPoints);
-    if (totalChange >= 10){
+    if (totalChange > 10){
+      setAnimationDuration(duration => duration * 0.8);
+      totalChange = totalChange - 10;
+    }
+    else if (totalChange === 10){
       setAnimationDuration(duration => duration * 0.8);
       totalChange = 0;
     }
