@@ -54,7 +54,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="header-name">GREEN<span>QUEST</span></h1>  
         {isModalOpen && <Information setModalOpen={setModalOpen}/>}
         <div className='header-container'>
         <h1 className="header-name">GREEN<span>QUEST</span></h1>
