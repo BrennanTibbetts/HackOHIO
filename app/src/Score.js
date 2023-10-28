@@ -18,10 +18,14 @@ const PointMap = () => {
     setScore(score + points);
   };
 
+  const getScore = () => {
+    return score;
+  };
+
   return (
     <div>
       <h2>Sustainability Actions</h2>
-      <Grid container spacing={2}>  {/ Replace ul with Grid container /}
+      <Grid container spacing={2}>  {/*replace ul with grid container */ } 
         {Array.from(pointMap.entries()).map(([action, points]) => (
           <Grid item xs={12} sm={6} md={4} key={action}>  {/ Replace li with Grid item */}
             <Button 
