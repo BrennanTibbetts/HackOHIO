@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import Button from '@mui/material/Button';
+import PointMap from './Score';  // Import PointMap from Score.js
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
             Hello
         </Button>
       </header>
+      <PointMap />
     </div>
   );
 }
