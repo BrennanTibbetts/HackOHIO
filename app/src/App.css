@@ -32,14 +32,10 @@ body {
 }
 
 .question {
-  width: 4%;
+  width: 8%;
   filter: invert(100%);
   margin-top: 1%;
   margin-left: 60%; 
-}
-
-.question img:hover {
-  cursor:help;
 }
 
 .App-header {
