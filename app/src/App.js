@@ -11,17 +11,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h1 className="header-name">GREEN<span>QUEST</span></h1>
         <img
           src={logo}
           className="App-logo"
           alt="logo"
           style={{ animationDuration: `${animationDuration}s` }}
         />
-        <Button id="speedButton" onClick={() => setAnimationDuration(duration => duration * 0.8)}>
+        {/* <Button id="speedButton" onClick={() => setAnimationDuration(duration => duration * 0.8)}>
           Increase Speed
-        </Button>
-        <h1 className="header-name">GREEN<span>QUEST</span></h1>
-        <img src={logo} className="App-logo" alt="logo" />
+        </Button> */}
         <ActivityManager/>
       </header>
       <PointMap />

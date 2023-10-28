@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';  // Import Grid from Material-UI
 
 const PointMap = () => {
   const [score, setScore] = useState(0);
@@ -20,21 +18,17 @@ const PointMap = () => {
 
   return (
     <div>
-      <h2>Sustainability Actions</h2>
-      <Grid container spacing={2}>  {/* Replace ul with Grid container */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: '10px' }}>
         {Array.from(pointMap.entries()).map(([action, points]) => (
-          <Grid item xs={12} sm={6} md={4} key={action}>  {/* Replace li with Grid item */}
-            <Button 
-              variant="contained" 
-              color="primary" 
-              onClick={() => handleClaimPoints(points)}
-              fullWidth  // This makes the button take up the full width of the grid item
-            >
-              {action}
-            </Button>
-          </Grid>
+          <button 
+            style={{ width: '100%', padding: '10px' }}
+            key={action} 
+            onClick={() => handleClaimPoints(points)}
+          >
+            {action}
+          </button>
         ))}
-      </Grid>
+      </div>
       <div>
         <h3>Total Score: {score}</h3>
       </div>
