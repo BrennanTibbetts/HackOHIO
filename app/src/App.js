@@ -1,8 +1,10 @@
 import logo from './logo.svg';
+import question from './question.png';
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ActivityManager from './ActivityManager';
 import Fact from './Facts';
+import Information from './Information';
 
 let totalChange = 0;
 function App() {
@@ -10,7 +12,12 @@ function App() {
   const [score, setScore] = useState(0);
   const [saturateValue, setSaturateValue] = useState(0);
   const maxSaturateValue = 2500;
+  const [isModalOpen, setModalOpen] = useState(false);
 
+  const togglePopup = () => {
+    setModalOpen(currentModalOpen => !currentModalOpen);
+  };
+  
   const incrementScore = (additionalPoints) => {
     totalChange += additionalPoints;
     setScore(currentScore => currentScore + additionalPoints);
@@ -29,11 +36,34 @@ function App() {
     }
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScore(currentScore => {
+        const timeBasedDecrease = calculateScoreDecrease(); 
+        return Math.max(0, currentScore - timeBasedDecrease); 
+      });
+    }, 40000); 
+
+    return () => clearInterval(interval); 
+  }, []);
+
+  const calculateScoreDecrease = () => {
+    return 1; 
+  };
 
   return (
     <div className="App">
       <header className="App-header">
         <h1 className="header-name">GREEN<span>QUEST</span></h1>  
+        {isModalOpen && <Information setModalOpen={setModalOpen}/>}
+        <div className='header-container'>
+        <h1 className="header-name">GREEN<span>QUEST</span></h1>
+        <img 
+          src={question}
+          className='question'
+          onClick={togglePopup}
+        />
+        </div>
         <img
           src={logo}
           className="App-logo"

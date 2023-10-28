@@ -3,14 +3,16 @@ import App from './App';
 
 const PointMap = ({setScore}) => {
   const pointMap = new Map([
-    ["Keep Lights Off", 1],
-    ["Take a Short Shower", 3],
-    ["Take Public Transport", 3],
-    ["Walk!", 6],
-    ["Unplug Devices", 1],
-    ["Recycle Plastic", 1],
-    ["Fill Water Bottles", 3],
+    ["Leave No Trace Principles", 2],
+    ["Reuse Products", 2],
+    ["Conserve Water", 3],
+    ["Recycle", 3],
+    ["Consume Energy Efficient Produce", 4],
+    ["Use Efficient Appliances", 4],
+    ["Use Efficient Vehichles", 5],
+    ["Volunteer", 6]
   ]);
+
 
   const handleClaimPoints = (points) => {
     setScore(points);
