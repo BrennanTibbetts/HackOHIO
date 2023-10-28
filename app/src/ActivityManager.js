@@ -1,5 +1,6 @@
+import './App.css';
 import React, { useState } from 'react';
-import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import Dropdown from './Dropdown';
 
 const ActivityManager = () => {
   const [activity, setActivity] = useState('');
@@ -9,21 +10,9 @@ const ActivityManager = () => {
   };
 
   return (
-    <FormControl fullWidth>
-      <InputLabel id="activity-select-label">Activity</InputLabel>
-      <Select
-        labelId="activity-select-label"
-        id="activity-select"
-        value={activity}
-        label="Activity"
-        onChange={handleChange}
-      >
-        <MenuItem value={"hiking"}>Hiking</MenuItem>
-        <MenuItem value={"swimming"}>Swimming</MenuItem>
-        <MenuItem value={"cycling"}>Cycling</MenuItem>
-        {/* Add more menu items here */}
-      </Select>
-    </FormControl>
+    <div className='activity-manager'>
+      <Dropdown/>
+    </div>
   );
 };
 
