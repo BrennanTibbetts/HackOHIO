@@ -21,7 +21,7 @@ function App() {
         {/* <Button id="speedButton" onClick={() => setAnimationDuration(duration => duration * 0.8)}>
           Increase Speed
         </Button> */}
-        <ActivityManager/>
+        <ActivityManager setAnimationDuration={setAnimationDuration}/>
       </header>
       <PointMap />
     </div>

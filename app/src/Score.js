@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
+import App from './App';
 
-const PointMap = () => {
+const PointMap = ({setAnimationDuration}) => {
   const [score, setScore] = useState(0);
   const pointMap = new Map([
+    ["Turning Off the Lights", 1],
+    ["Taking Shorter Showers", 3],
+    ["Taking Public Transportation", 3],
+    ["Walking", 6],
+    ["Unplugging Devices", 1],
+    ["Recycle the equivalent of one bottle", 1],
+    ["Filling up water bottles", 3],
     ["Turning Off the Lights", 1],
     ["Taking Shorter Showers", 3],
     ["Taking Public Transportation", 3],
@@ -14,6 +22,11 @@ const PointMap = () => {
 
   const handleClaimPoints = (points) => {
     setScore(score + points);
+    setAnimationDuration(score);
+  };
+
+  const getScore = () => {
+    return score;
   };
 
   return (

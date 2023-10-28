@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 
-const ActivityManager = () => {
+const ActivityManager = ({setAnimationDuration}) => {
   const [activity, setActivity] = useState('');
 
   const handleChange = (event) => {
@@ -11,7 +11,7 @@ const ActivityManager = () => {
 
   return (
     <div className='activity-manager'>
-      <Dropdown/>
+      <Dropdown setAnimationDuration={setAnimationDuration}/>
     </div>
   );
 };

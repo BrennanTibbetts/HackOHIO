@@ -63,11 +63,11 @@ body {
 .dropdown-content {
   max-height: 0;
   overflow: auto;
-  transition: max-height 0.5s ease-out; /* Smooth transition for 0.5 seconds */
+  transition: max-height 0.5s ease-out; 
 }
 
 .dropdown-content.active {
-  max-height: 500px; /* Adjust this value based on your content's size */
+  max-height: 500px; 
 }
 
 @keyframes App-logo-spin {
@@ -77,6 +77,4 @@ body {
   to {
     transform: rotate(360deg);
   }
-  animation-iteration-count: infinite;
-  animation-duration: 5s; /* Initial animation duration */
 }
