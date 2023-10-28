@@ -62,7 +62,7 @@ body {
 
 .dropdown-content {
   max-height: 0;
-  overflow: hidden;
+  overflow: auto;
   transition: max-height 0.5s ease-out; /* Smooth transition for 0.5 seconds */
 }
 

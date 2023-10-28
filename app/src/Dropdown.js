@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import logo from './logo.svg'
+import PointMap from './Score';
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,7 +15,7 @@ const Dropdown = () => {
         <h2>{isOpen ? 'HIDE' : 'SHOW'} ACTIVITIES</h2>
       </button>
       <div className={`dropdown-content ${isOpen ? 'active' : ''}`}>
-         <img src={logo} className="App-logo" alt="logo"/>
+        <PointMap/>
       </div>
     </div>
   );
