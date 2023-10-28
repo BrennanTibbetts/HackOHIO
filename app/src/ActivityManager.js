@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import Dropdown from './Dropdown';
 
-const ActivityManager = ({setAnimationDuration}) => {
+const ActivityManager = ({setScore}) => {
   const [activity, setActivity] = useState('');
 
   const handleChange = (event) => {
@@ -11,7 +11,7 @@ const ActivityManager = ({setAnimationDuration}) => {
 
   return (
     <div className='activity-manager'>
-      <Dropdown setAnimationDuration={setAnimationDuration}/>
+      <Dropdown setScore={setScore}/>
     </div>
   );
 };
