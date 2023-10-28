@@ -22,7 +22,9 @@ const PointMap = ({setAnimationDuration}) => {
 
   const handleClaimPoints = (points) => {
     setScore(score + points);
-    setAnimationDuration(score);
+    if (score % 10 == 0){
+      setAnimationDuration(duration => duration * 0.8);
+    }
   };
 
   const getScore = () => {
