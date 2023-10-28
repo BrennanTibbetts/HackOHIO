@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from 'react';
 import ActivityManager from './ActivityManager';
 import Fact from './Facts';
+import Information from './Information';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <Information />
         <h1 className="header-name">GREEN<span>QUEST</span></h1>
         <img
           src={logo}
