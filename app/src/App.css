@@ -26,7 +26,7 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(60%) contrast(119%);
+    filter: invert(48%) sepia(79%) saturate(2500%) hue-rotate(86deg) brightness(60%) contrast(119%);
     user-select: none;
   }
 }
@@ -124,3 +124,4 @@ body {
     transform: rotate(360deg);
   }
 }
+
