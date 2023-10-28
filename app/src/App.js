@@ -10,11 +10,12 @@ let totalChange = 0;
 function App() {
   const [animationDuration, setAnimationDuration] = useState(5);
   const [score, setScore] = useState(0);
-  const [popupIsVisible, setIsPopupVisible] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
 
   const togglePopup = () => {
-    setIsPopupVisible(prevState => !prevState);
+    setModalOpen(currentModalOpen => !currentModalOpen);
   };
+
 
   const incrementScore = (additionalPoints) => {
     totalChange += additionalPoints;
@@ -47,7 +48,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Information />
+        {isModalOpen && <Information setModalOpen={setModalOpen}/>}
         <div className='header-container'>
         <h1 className="header-name">GREEN<span>QUEST</span></h1>
         <img 

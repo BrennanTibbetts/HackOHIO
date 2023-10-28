@@ -38,6 +38,10 @@ body {
   margin-left: 60%; 
 }
 
+.question img:hover {
+  cursor:help;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
