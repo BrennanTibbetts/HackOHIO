@@ -77,4 +77,6 @@ body {
   to {
     transform: rotate(360deg);
   }
+  animation-iteration-count: infinite;
+  animation-duration: 5s; /* Initial animation duration */
 }
