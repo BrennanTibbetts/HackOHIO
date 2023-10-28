@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
 import PointMap from './Score';  // Import PointMap from Score.js
 import ActivityManager from './ActivityManager';
 
@@ -18,9 +17,7 @@ function App() {
           alt="logo"
           style={{ animationDuration: `${animationDuration}s` }}
         />
-        {/* <Button id="speedButton" onClick={() => setAnimationDuration(duration => duration * 0.8)}>
-          Increase Speed
-        </Button> */}
+        {}
         <ActivityManager setAnimationDuration={setAnimationDuration}/>
       </header>
       <PointMap />
