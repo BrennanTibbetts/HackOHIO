@@ -3,13 +3,13 @@ import App from './App';
 
 const PointMap = ({setScore}) => {
   const pointMap = new Map([
-    ["Turning Off the Lights", 1],
-    ["Taking Shorter Showers", 3],
-    ["Taking Public Transportation", 3],
-    ["Walking", 6],
-    ["Unplugging Devices", 1],
-    ["Recycle One Bottle", 1],
-    ["Filling up water bottles", 3],
+    ["Keep Lights Off", 1],
+    ["Take a Short Shower", 3],
+    ["Take Public Transport", 3],
+    ["Walk!", 6],
+    ["Unplug Devices", 1],
+    ["Recycle Plastic", 1],
+    ["Fill Water Bottles", 3],
   ]);
 
   const handleClaimPoints = (points) => {

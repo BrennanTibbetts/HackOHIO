@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
 import ActivityManager from './ActivityManager';
+import Fact from './Facts';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     }
   };
 
+
   return (
     <div className="App">
       <header className="App-header">
@@ -27,6 +29,7 @@ function App() {
         />
         <h2 className='score-overlay'>{score}</h2>
         <ActivityManager setScore = {incrementScore} />
+        <Fact />
       </header>
     </div>
   );
