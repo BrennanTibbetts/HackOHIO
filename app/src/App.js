@@ -10,6 +10,9 @@ function App() {
 
   const incrementScore = (additionalPoints) => {
     setScore(currentScore => currentScore + additionalPoints);
+    if (score % 10 == 0){
+      setAnimationDuration(duration => duration * 0.8);
+    }
   };
 
   return (
