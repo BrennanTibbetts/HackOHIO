@@ -10,6 +10,17 @@ body {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  position: relative;
+}
+
+.score-overlay {
+  position: absolute;
+  top: 23%; 
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  color: white; 
+  font-size: 2em; 
+  z-index: 10;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -38,6 +49,32 @@ body {
   flex-grow: 1;
   padding: 0;
 }
+
+.activity-buttons {
+  display: flex;
+  margin-top: 2%;
+  gap: 10px; 
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.activity-button {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 10px; 
+  max-width: 30%;
+  min-height: 50px;
+  border: 1px solid #ddd; 
+  background-color: #f8f8f8; 
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.activity-button h2 {
+  white-space: nowrap; 
+}
+
 
 .header-name {
   user-select: none;

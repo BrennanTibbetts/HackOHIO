@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PointMap from './Score';
 
-const Dropdown = ({setAnimationDuration}) => {
+const Dropdown = ({setScore}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ const Dropdown = ({setAnimationDuration}) => {
         <h2>{isOpen ? 'HIDE' : 'SHOW'} ACTIVITIES</h2>
       </button>
       <div className={`dropdown-content ${isOpen ? 'active' : ''}`}>
-        <PointMap setAnimationDuration={setAnimationDuration}/>
+        <PointMap setScore={setScore}/>
       </div>
     </div>
   );

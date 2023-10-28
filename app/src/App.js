@@ -1,12 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { useState } from 'react';
-import Button from '@mui/material/Button';
-import PointMap from './Score';  // Import PointMap from Score.js
 import ActivityManager from './ActivityManager';
 
 function App() {
-  const [animationDuration, setAnimationDuration] = useState(5); // Initial animation duration
+
+  const [animationDuration, setAnimationDuration] = useState(5);
+  const [score, setScore] = useState(0);
+
+  const incrementScore = (additionalPoints) => {
+    setScore(currentScore => currentScore + additionalPoints);
+    if (score % 10 == 0){
+      setAnimationDuration(duration => duration * 0.8);
+    }
+  };
 
   return (
     <div className="App">
@@ -18,13 +25,11 @@ function App() {
           alt="logo"
           style={{ animationDuration: `${animationDuration}s` }}
         />
-        {/* <Button id="speedButton" onClick={() => setAnimationDuration(duration => duration * 0.8)}>
-          Increase Speed
-        </Button> */}
-        <ActivityManager setAnimationDuration={setAnimationDuration}/>
+        <h2 className='score-overlay'>{score}</h2>
+        <ActivityManager setScore = {incrementScore} />
       </header>
-      <PointMap />
     </div>
   );
 }
+
 export default App;
