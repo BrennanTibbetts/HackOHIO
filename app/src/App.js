@@ -7,7 +7,7 @@ import Fact from './Facts';
 import Information from './Information';
 
 function App() {
-  const decreaseMS = 240000;
+  const decreaseMS = 5760000;
   const initialSpeed = 5; 
   const maxSaturateValue = 2500;
   const [isModalOpen, setModalOpen] = useState(false);
