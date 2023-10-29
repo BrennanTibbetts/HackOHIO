@@ -70,13 +70,13 @@ function App() {
       <header className="App-header">
         {isModalOpen && <Information setModalOpen={setModalOpen}/>}
         <div className='header-container'>
-        <h1 className="header-name">GREEN<span>QUEST</span></h1>
-        <img 
-          src={question}
-          className='question'
-          onClick={togglePopup}
-          alt='help'
-        />
+          <h1 className="header-name">GREEN<span>QUEST</span></h1>
+          <img 
+            src={question}
+            className='question'
+            onClick={togglePopup}
+            alt='help'
+          />
         </div>
         <img
           src={logo}
