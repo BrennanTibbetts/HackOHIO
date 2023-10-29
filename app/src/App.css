@@ -32,14 +32,14 @@ body {
 }
 
 .question {
-  width: 4%;
+  width: 6%;
   filter: invert(100%);
   margin-top: 1%;
   margin-left: 60%; 
 }
 
-.question img:hover {
-  cursor:help;
+.question:hover {
+  cursor: pointer;
 }
 
 .App-header {
@@ -99,7 +99,7 @@ body {
   user-select: none;
   color: white;
   margin: 0;
-  margin-left: 62%;
+  margin-left: 66%;
   display: inline-block;
   text-align: center;
 }
