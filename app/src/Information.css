@@ -48,3 +48,21 @@
     cursor: pointer;
   }
   
+    /* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Track background - set to transparent or any color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: white; /* Thumb color */
+    border-radius: 5px; /* Rounded corners for the thumb */
+}
+
+/* Hover effect on scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3; /* Color of the thumb when hovered */
+}
