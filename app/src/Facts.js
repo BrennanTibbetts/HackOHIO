@@ -2,14 +2,22 @@ import React, { useState, useEffect } from 'react';
 
 const Fact = () => {
     const facts = [
-        "LED is currently one of the most efficient and rapidly developing lighting technologies.",
-        "Residential LEDs use 25% of the electricity of incandescent bulbs and last up to 25 times longer.",
-        "LEDs emit almost no energy as heat – in contrast, incandescent bulbs release 90% of their energy as heat, and compact fluorescent lights (CFLs) release up to 80% of their energy as heat.",
-        "LED products are currently not as widely available or inexpensive as CFLs or incandescent bulbs but are becoming more so all the time.",
-        "Less than 2% of the Earth’s water supply is fresh water.",
+        "Agriculture uses up 70% of our global freshwater. It goes up to 90% in fast-developing countries.",
+        "The US makes up only 5% of the world population, but it throws away enough plastic bottles in a week to encircle the Earth 5 times!",
+        "The average college student produces 640 pounds of solid waste each year, including 500 disposable cups and 320 pounds of paper.",
+        "The five warmest years on record have occurred in the last decade.",
+        "Transportation and housing make up about 60% of the carbon footprint of US households. This is due to the fuels used for transportation and to heat, cool and power our homes.",
         "Only 1% of the earth's water is available for drinking water. Two percent is frozen.",
         "Every day in the United States, we drink about 110 million gallons of water.",
-        "Showering and bathing are the largest indoor uses (27%) of water domestically."
+        "Showering and bathing are the largest indoor uses (27%) of water domestically.",
+        "Scientists predict that if the increase in greenhouse gas emissions continues unabated, temperatures will rise by as much as 10 degrees Fahrenheit by the end of this century.",
+        "Recycling one aluminum can save enough energy to run a TV for three hours.",
+        "Up to 90% of the energy used during a washing machine’s cleaning cycle goes into heating the water, so use the cold setting.",
+        "Rainforests are being cut down at the rate of 100 acres per minute.",
+        "To avoid flying, Greta Thunberg sailed to North America from Sweden where she attended the 2019 UN Climate Action Summit.",
+        "A hot water faucet that leaks one drop per second can add up to 165 gallons a month. That's more than one person uses in two weeks.",
+        "Heating, ventilating and air conditioning systems account for 40-60 percent of total energy use in the commercial sector.",
+        "In the United States, more than 40 percent of municipal solid waste is paper -- about 71.8 tons a year."
     ];
 
     const [randomFact, setRandomFact] = useState(facts[0]);
@@ -37,3 +45,4 @@ const Fact = () => {
 };
 
 export default Fact;
+

@@ -26,9 +26,20 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(60%) contrast(119%);
+    filter: invert(48%) sepia(79%) saturate(2500%) hue-rotate(86deg) brightness(60%) contrast(119%);
     user-select: none;
   }
+}
+
+.question {
+  width: 8%;
+  filter: invert(100%);
+  margin-top: 1%;
+  margin-left: 60%; 
+}
+
+.question:hover {
+  cursor: pointer;
 }
 
 .App-header {
@@ -41,12 +52,15 @@ body {
   color: white;
 }
 
+.App-header div {
+  align-items: center;
+}
+
 .activity-manager {
   margin-top: 1%;
   display: flex;
   width: 100%;
   background-color: green;
-  flex-grow: 1;
   padding: 0;
 }
 
@@ -75,11 +89,19 @@ body {
   white-space: nowrap; 
 }
 
+.header-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
 
 .header-name {
   user-select: none;
   color: white;
   margin: 0;
+  margin-left: 66%;
+  display: inline-block;
+  text-align: center;
 }
 
 .header-name span {
@@ -89,22 +111,33 @@ body {
 .dropdown {
   width: 100%;
   margin: 0px;
+  margin-bottom: 2%;
 }
 
 .dropdown button {
   color: green;
   width: 100%;
   overflow-y: auto;
+  user-select: none;
+}
+
+.dropdown button:hover {
+  background-color: green; 
+  color: white;
 }
 
 .dropdown-content {
   max-height: 0;
+  padding: 0;
   overflow: auto;
   transition: max-height 0.5s ease-out; 
+  overflow-y: hidden;
 }
 
 .dropdown-content.active {
   max-height: 500px; 
+  margin-bottom: 50px;
+  overflow-y: hidden;
 }
 
 @keyframes App-logo-spin {
@@ -115,3 +148,4 @@ body {
     transform: rotate(360deg);
   }
 }
+
