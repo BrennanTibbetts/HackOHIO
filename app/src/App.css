@@ -38,6 +38,10 @@ body {
   margin-left: 60%; 
 }
 
+.question:hover {
+  cursor: pointer;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -95,7 +99,7 @@ body {
   user-select: none;
   color: white;
   margin: 0;
-  margin-left: 62%;
+  margin-left: 66%;
   display: inline-block;
   text-align: center;
 }
@@ -121,6 +125,7 @@ body {
   background-color: green; 
   color: white;
 }
+
 .dropdown-content {
   max-height: 0;
   padding: 0;
