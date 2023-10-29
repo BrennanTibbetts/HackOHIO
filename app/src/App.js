@@ -91,6 +91,7 @@ function App() {
         <ActivityManager setScore = {incrementScore} />
         <Fact />
       </header>
+      <Fact/>
     </div>
   );
 }

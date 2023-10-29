@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
 const Fact = () => {
-
     const facts = [
         "Agriculture uses up 70% of our global freshwater. It goes up to 90% in fast-developing countries.",
         "The US makes up only 5% of the world population, but it throws away enough plastic bottles in a week to encircle the Earth 5 times!",
@@ -46,3 +45,4 @@ const Fact = () => {
 };
 
 export default Fact;
+
